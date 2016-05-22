@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[croatian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[symbol]{footmisc}
+
+\usepackage[margin=2cm]{geometry}
+\pagenumbering{gobble}
+
+\begin{document}
+	\title{Završna laboratorijska vježba\\{\large Napredno korištenje operacijskog sustava Linux}}
+	\date{\vspace{-5ex} 26.05.2015.}
+	\maketitle
+	
+	Marcus želi znati instalirati Linux na virtualnu mašinu i pri tome naučiti puno o Linuxu. Želi isprobati razne konfiguracije i servise te razumijeti svaki detalj funkcioniranja njegova sustava. Odlučili ste mu pomoći u instalaciji Arch Linuxa.
+	
+	\section*{Zadatak}
+	
+	Instalirati Arch Linux po sljedećim uputama:
+	
+	\hfill
+	\hfill
+	\begin{itemize}
+		\item Virtualni stroj treba imati 2 hard diska proizvoljnih veličina (ukupno najmanje 20GB) i barem 1GB RAM-a. Particije postaviti tako da na prvom hard disku bude /boot particija male veličine, a ostatak prvog i cijeli drugi disk staviti u jednu LVM volume grupu. U volume grupi napravite tri logička volumena od kojih ćete prva dva montirati na / i /home, a treći koristiti za swap prostor. Logički volumen kojeg montirate na / ne smije biti veći od 30 GB.
+  		
+  		\item Dodajte korisnike: \texttt{josipd}, \texttt{josipz}, \texttt{dominik}, \texttt{zeljka}, \texttt{borna}, \texttt{kreso}, \texttt{leo}. Za ostvarivanje daljnjih zahtjeva poželjno je i potrebno korisnike dodavati u grupe.
+  		
+  		\item Predavačima, \texttt{josipd} i \texttt{dominik}, dodijelite sudo ovlasti. Ispitivačima NKOSL-a omogućite sudo ovlasti prema grupi \texttt{studenti}.
+  		
+  		\item Instalirati skripte iz prvog zadatka druge DZ i konfigurirati mrežu kao u drugom zadatku druge DZ. Svi servisi koji će se dalje konfigurirati moraju biti dostupni s lokalne mreže.
+  		
+  		\item Korištenjem naredbi vezanih za AUR pakete instalirati jedno od grafičkih sučelja za \texttt{netctl} koja su predložena na Arch wiki stranicama.
+  		
+  		\item Podesiti SSH pristup predavačima i ispitivačima NKOSL-a.
+  		
+  		\item Podesiti FTP server tako da predavači imaju pristup cijeloj datotečnoj strukturi, a ispitivači samo vlastitim matičnim direktorijima.
+  		
+  		\item Predavačima podesiti SMB pristup njihovim matičnim direktorijima.
+  		
+  		\item[*] Instalirati pakete potrebne za rad grafičkog sučelja (X11). Instalirati dva desktop okruženja, Xfce i LXDE i omogućiti odabir okruženja pri logiranju korisnika. Grafičko sučelje se prilikom paljenja računala mora pokrenuti na jednom virtualnom terminalu.
+  		
+  		\item[*] Podesiti pulseaudio za reprodukcija zvuka. Kontrola glasnoće mora raditi iz grafičkog sučelja.
+  	\end{itemize}
+  	\footnotetext[1]{Zadaci označeni sa zvjezdicom spadaju u gradivo zadnjeg predavanja i neće se detaljno ispitivati na vježbi. Ipak, točno rješeni zadaci iz gradiva grafičkog sučelja i zvuka mogu donijeti dodatne bodove.}
+\end{document}
