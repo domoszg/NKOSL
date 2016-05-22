@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[croatian]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=2cm]{geometry}
+\pagenumbering{gobble}
+
+\begin{document}
+	\title{Laboratorijska vježba 2\\{\large Napredno korištenje operacijskog sustava Linux}}
+	\date{\vspace{-5ex} 15.05.2015.}
+	\maketitle
+	
+        Novopromovirani manageri, Sunny Leone i Peter North, dobili su zadatak smanjenja troškova proizvodnje. Kao prvi korak, odlučili su virtualizirati postojeće serverse resurse.
+        Vaš je zadatak pomoći im da se odluče za jednostavnije rješenje: Docker platforma ili Vagrant.
+        Vagrant jest wrapper software oko VirtualBox-a.
+        
+	
+	\section*{Zadatak}
+	
+        Docker platforma \\
+        
+        Potrebno je virtualizirati web aplikaciju iz 1. laboratorijske vježbe - python HelloWorldServer.\\
+        Aplikaciju je potrebno upogoniti u vlastitom docker containeru. Početnu sliku (eng. image) za container odaberite po želji, također korištenje Dockerfile datoteke je opcionalno.
+        Jedina iznimka u python skripti je da HelloWorldServer aplikacija MORA slušati za konekcije na portu 80. (Trenutno sluša na 8888)
+        
+        Način povezivanja containera i nginx web poslužitelja ostavljeno je vama na odluku.\\
+        Opcionalni zadatak: automatizirati podizanje dodatnih HelloWorldServer containera i osvježavanje nginx konfiguracije.
+
+        \section*{Zadatak}
+
+        VirtualBox i Vagrant \\
+
+        Potrebno je ostvariti pokretanje i pristupanje u virtualiziranom operacijskom sustavu kroz terminal, koristeći naredbe: vagrant up i vagrant ssh.
+        Način na koji ćete to ostvariti ostavljeno je vama na odluku. \\
+        \\
+        Savjet: \\
+        Instalirajte VirtualBox i Vagrant sa stranica proizvođača programa. \\
+        OS za virtualizaciju ili gotovu vagrant sliku odaberite po želji. \\
+        Vagrant up naredba pokreće operacijski sustav, a vagrant ssh pristupa virtualiziranom OS-u ssh protokolom. \\
+
+\end{document}
