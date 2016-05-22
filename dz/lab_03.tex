@@ -2,41 +2,32 @@
 
 \usepackage[croatian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[symbol]{footmisc}
 
 \usepackage[margin=2cm]{geometry}
 \pagenumbering{gobble}
 
 \begin{document}
-	\title{Laboratorijska vježba 2\\{\large Napredno korištenje operacijskog sustava Linux}}
-	\date{\vspace{-5ex} 15.05.2015.}
+	\title{Laboratorijska vježba 3\\{\large Napredno korištenje operacijskog sustava Linux}}
+	\date{\vspace{-5ex} 22.05.2015.}
 	\maketitle
 	
-        Novopromovirani manageri, Sunny Leone i Peter North, dobili su zadatak smanjenja troškova proizvodnje. Kao prvi korak, odlučili su virtualizirati postojeće serverse resurse.
-        Vaš je zadatak pomoći im da se odluče za jednostavnije rješenje: Docker platforma ili Vagrant.
-        Vagrant jest wrapper software oko VirtualBox-a.
+        Novopromovirani manageri, Sunny Leone i Peter North, dobili su zadatak smanjenja troškova proizvodnje. Kao prvi korak, odlučili su virtualizirati postojeće serverse resurse. Vaš je zadatak pomoći im da se odluče za jednostavnije rješenje: Docker platforma ili Vagrant (wrapper oko VirtualBoxa).
         
 	
 	\section*{Zadatak}
 	
-        Docker platforma \\
+        \textbf{Docker platforma} \\
         
-        Potrebno je virtualizirati web aplikaciju iz 1. laboratorijske vježbe - python HelloWorldServer.\\
-        Aplikaciju je potrebno upogoniti u vlastitom docker containeru. Početnu sliku (eng. image) za container odaberite po želji, također korištenje Dockerfile datoteke je opcionalno.
-        Jedina iznimka u python skripti je da HelloWorldServer aplikacija MORA slušati za konekcije na portu 80. (Trenutno sluša na 8888)
+        Potrebno je virtualizirati web aplikaciju iz 1. laboratorijske vježbe - python HelloWorldServer. Aplikaciju je potrebno upogoniti u vlastitom docker containeru. Po želji odaberite i preuzmite početnu sliku (engl. \textit{image}) containera. Korištenje Dockerfile datoteke je opcionalno. Izmijenite python skriptu tako da HelloWorldServer aplikacija sluša na portu 80. (Trenutno sluša na 8888.) Način povezivanja containera i nginx web poslužitelja ostavljen je vama na odluku.\\
         
-        Način povezivanja containera i nginx web poslužitelja ostavljeno je vama na odluku.\\
-        Opcionalni zadatak: automatizirati podizanje dodatnih HelloWorldServer containera i osvježavanje nginx konfiguracije.
+        \footnote[1]{Zadatak označen zvjezdicom nije nužno rješiti, no može donijeti dodatne bodove na laboratorijskoj vježbi.} Automatizirati podizanje dodatnih HelloWorldServer containera i osvježavanje nginx konfiguracije.
 
-        \section*{Zadatak}
+    \section*{Zadatak}
 
-        VirtualBox i Vagrant \\
+        \textbf{VirtualBox i Vagrant} \\
 
-        Potrebno je ostvariti pokretanje i pristupanje u virtualiziranom operacijskom sustavu kroz terminal, koristeći naredbe: vagrant up i vagrant ssh.
-        Način na koji ćete to ostvariti ostavljeno je vama na odluku. \\
-        \\
-        Savjet: \\
-        Instalirajte VirtualBox i Vagrant sa stranica proizvođača programa. \\
-        OS za virtualizaciju ili gotovu vagrant sliku odaberite po želji. \\
-        Vagrant up naredba pokreće operacijski sustav, a vagrant ssh pristupa virtualiziranom OS-u ssh protokolom. \\
+        Instalirajte VirtualBox i Vagrant sa stranica proizvođača programa. Potrebno je ostvariti pokretanje i pristupanje virtualiziranom operacijskom sustavu kroz terminal koristeći naredbe: \texttt{vagrant up} i \texttt{vagrant ssh}. Po želji odaberite koju ćete distribuciju virtualizirati. Možete koristiti gotove vagrant slike (engl. \textit{images}).
+        
 
 \end{document}
